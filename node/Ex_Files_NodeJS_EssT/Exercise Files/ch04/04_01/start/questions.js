@@ -1,5 +1,4 @@
 const readline = require("readline");
-const { read } = require("fs");
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -20,7 +19,7 @@ const collectAnswers = (questions, done) => {
     if (answers.length < questions.length) {
       rl.question(questions[answers.length], questionAnswered);
     } else {
-        done(answers);
+      done(answers);
     }
   };
   rl.question(firstQuestion, questionAnswered);
