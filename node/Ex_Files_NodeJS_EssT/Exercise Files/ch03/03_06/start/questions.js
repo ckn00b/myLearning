@@ -29,7 +29,6 @@ process.on("exit", () => {
 Thank you for your anwsers.
 
 Go ${activity} ${name} you can write ${lang} code later!!!
-
   
   `);
 });
