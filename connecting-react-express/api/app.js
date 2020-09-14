@@ -9,11 +9,11 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var testAPIRouter = require("./routes/testAPI");
 var app = express();
-
+var testDBRouter = require("./routes/testDB");
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "jade");
-
+app.use("/testDB", testDBRouter);
 app.use(cors());
 app.use(logger("dev"));
 app.use(express.json());
