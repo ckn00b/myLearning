@@ -8,12 +8,12 @@ public class Main {
         char studentLastInitial = studentLastName.charAt(0);
         boolean hasPerfectAttendance = true;
 
-        System.out.println(studentAge);
+/*         System.out.println(studentAge);
         System.out.println(studentGPA);
         System.out.println(studentFirstInitial);
         System.out.println(studentLastInitial);
-        System.out.println(hasPerfectAttendance);
-        System.out.println(studentFirstName);
-        System.out.println(studentLastName);
+        System.out.println(hasPerfectAttendance); */
+        System.out.println(studentFirstName + " " + studentLastName + " has a GPA of " + studentGPA);
+/*         System.out.println(studentLastName); */
     }
 }
