@@ -2,8 +2,10 @@ public class Main {
     public static void main(String[] args) {
         int studentAge = 15;
         double studentGPA = 3.45;
-        char studentFirstInitial = 'C';
-        char studentLastInitial = 'N';
+        String studentFirstName = "Christian";
+        String studentLastName = "New";
+        char studentFirstInitial = studentFirstName.charAt(0);
+        char studentLastInitial = studentLastName.charAt(0);
         boolean hasPerfectAttendance = true;
 
         System.out.println(studentAge);
@@ -11,5 +13,7 @@ public class Main {
         System.out.println(studentFirstInitial);
         System.out.println(studentLastInitial);
         System.out.println(hasPerfectAttendance);
+        System.out.println(studentFirstName);
+        System.out.println(studentLastName);
     }
 }
